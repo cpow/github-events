@@ -16,7 +16,9 @@ an application to display events on a given user's repositories in github
 - [ ] more robust tests covering more scenarios in user actions
 - [ ] controller specs, although feature specs implement controller actions, it
   would be nice to have a lower level controller spec
-
+  
+## SS:
+![](http://i.imgur.com/w5I7xp1.gifv)
 
 this should satisfy all requirements in [seeClickFix's
 Gist](https://gist.github.com/gwright/d4a73db35147e5de5553fea7fe03ab11). There
