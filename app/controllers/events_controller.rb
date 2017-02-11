@@ -3,8 +3,8 @@ class EventsController < ApplicationController
   end
 
   def create
-    @event_search = EventSearch.new(event_search_params)
-    if @event_search.valid?
+    @event_search = EventSearch.create(event_search_params)
+    if @event_search.save
       redirect_to event_path(@event_search)
     else
       render :new, notice: "Please fill out all form details"
@@ -12,11 +12,12 @@ class EventsController < ApplicationController
   end
 
   def show
+    @event_search = EventSearch.find(params[:id])
   end
 
   private
 
   def event_search_params
-    params.require(:event_search).permit(:event_type, :user_name, :repo_name)
+    params.require(:event_search).permit(:event_type, :user_name, :repo_name, :id)
   end
 end
