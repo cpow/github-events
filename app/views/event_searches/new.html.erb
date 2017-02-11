@@ -5,7 +5,7 @@
   </div>
 
   <div class="well">
-    <%= form_for :event_search, url: events_path, method: :post do |f| %>
+    <%= form_for :event_search, url: event_searches_path, method: :post do |f| %>
       <div class="form-group">
         <%= f.label :event_type %>
         <%= f.text_field :event_type %>
@@ -23,5 +23,3 @@
     <% end %>
   </div>
 </div>
-
-<h1>currently searching for <%= @event_search.user_name %></h1>

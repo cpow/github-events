@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root to: 'events#new'
-  resources :events, ony: [:create, :new, :show]
+  root to: 'event_searches#new'
+  resources :event_searches, ony: [:create, :new, :show]
 end
