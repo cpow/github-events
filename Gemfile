@@ -42,7 +42,7 @@ group :development, :test do
   gem 'dotenv-rails'
   gem 'rspec-rails'
   gem 'capybara', '~> 2.12.0'
-  gem 'shoulda-matchers'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 
