@@ -4,22 +4,5 @@
     <p>Search for users and their repos. Then display all events in that repo!</p>
   </div>
 
-  <div class="well">
-    <%= form_for :event_search, url: event_searches_path, method: :post do |f| %>
-      <div class="form-group">
-        <%= f.label :event_type %>
-        <%= f.text_field :event_type %>
-      </div>
-      <div class="form-group">
-        <%= f.label :repo_name %>
-        <%= f.text_field :repo_name %>
-      </div>
-      <div class="form-group">
-        <%= f.label :user_name %>
-        <%= f.text_field :user_name %>
-      </div>
-
-      <%= f.submit "Find Events", class: "btn btn-primary" %>
-    <% end %>
-  </div>
+  <%= render partial: "shared/form", locals: { event_search: @event_search } %>
 </div>

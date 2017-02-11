@@ -1,0 +1,35 @@
+Rails.application.config.github_event_types = %w(
+  CommitCommentEvent
+  CreateEvent
+  DeleteEvent
+  DeploymentEvent
+  DeploymentStatusEvent
+  DownloadEvent
+  FollowEvent
+  ForkEvent
+  ForkApplyEvent
+  GistEvent
+  GollumEvent
+  IssueCommentEvent
+  IssuesEvent
+  LabelEvent
+  MemberEvent
+  MembershipEvent
+  MilestoneEvent
+  OrganizationEvent
+  PageBuildEvent
+  ProjectCardEvent
+  ProjectColumnEvent
+  ProjectEvent
+  PublicEvent
+  PullRequestEvent
+  PullRequestReviewEvent
+  PullRequestReviewCommentEvent
+  PushEvent
+  ReleaseEvent
+  RepositoryEvent
+  StatusEvent
+  TeamEvent
+  TeamAddEvent
+  WatchEvent
+)
