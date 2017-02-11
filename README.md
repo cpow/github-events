@@ -18,7 +18,7 @@ an application to display events on a given user's repositories in github
   would be nice to have a lower level controller spec
 
 
-this should satisfy all requirements in ![seeClickFix's
+this should satisfy all requirements in [seeClickFix's
 Gist](https://gist.github.com/gwright/d4a73db35147e5de5553fea7fe03ab11). There
 are some nice-to-haves noted above. But everything should be in working order
 
